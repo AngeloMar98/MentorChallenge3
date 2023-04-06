@@ -1,0 +1,319 @@
+/*
+##COLORS
+-Primary: hsl(171, 66%, 44%), hsl(233, 100%, 69%)
+ Primary shades: #1e9583, #4e5ccc
+-Neutrals: hsl(210, 10%, 33%), hsl(201, 11%, 66%)
+
+##FONTS
+Family: Bai Jamjuree
+Font weight: 400, 600
+Font size: 18px         
+Line heights: 
+
+
+
+DESKTOP: 1440px
+MOBILE: 375px
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  line-height: 1;
+  color: hsl(201, 11%, 66%);
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 4.6rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.intro-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*******************************/
+/* HERO SECTION */
+/*******************************/
+.hero-section {
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.hero {
+  padding: 10rem 2rem 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.hero-logo {
+  margin-bottom: 4.2rem;
+  width: 12.5rem;
+}
+
+.download-buttons {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 1.6rem 3.6rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btn--ios {
+  background-color: #26baa4;
+  box-shadow: inset 0 -1.5px 0 1.5px #1e9583,
+    0 4px 10px 4px rgba(38, 186, 164, 0.5);
+}
+
+.btn--mac {
+  background-color: #6173ff;
+  box-shadow: inset 0px -1.5px 0 1.5px #4e5ccc,
+    0 4px 10px 4px rgba(78, 93, 204, 0.5);
+}
+
+.main-section {
+  margin: 16rem 0 16rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.med-marg-bottom {
+  margin-bottom: 8rem;
+}
+
+/*******************************/
+/* FEATURE SECTION */
+/*******************************/
+
+.main-section {
+  margin: 16rem 0 16rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-monitor {
+  width: 100%;
+  min-width: 400px;
+  margin-left: -3rem;
+}
+
+.devices-image {
+  width: 60%;
+  min-width: 400px;
+  margin-bottom: -6rem;
+}
+
+.feature-description {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
+.feature-list {
+  width: 400px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.6rem;
+}
+
+.feature-list li p {
+  line-height: 1.4;
+}
+
+.tools-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.4rem;
+  text-align: center;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tool-icon-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.larger-container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+/*******************************/
+/* CLIENT SECTION */
+/*******************************/
+
+.clients-logos {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.clients-logo {
+  width: 100%;
+}
+
+/*******************************/
+/* CLIENT SECTION */
+/*******************************/
+footer {
+  background-color: hsla(202, 11%, 66%, 0.4);
+  color: hsl(210, 10%, 33%);
+}
+
+.footer {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer-links {
+  margin-left: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 1.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 6.5rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: hsl(210, 10%, 33%);
+  transition: all 0.3;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #26baa4;
+}
+
+.social-links {
+  margin: 0 2rem 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.social-link:hover {
+  filter: invert(68%) sepia(23%) saturate(1661%) hue-rotate(119deg)
+    brightness(90%) contrast(70%);
+}
+
+@media only screen and (max-device-width: 600px) {
+  main {
+    padding: 0 2rem;
+  }
+  .hero-section {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .larger-container,
+  .intro-container {
+    width: 100%;
+  }
+
+  .footer,
+  .clients-logos,
+  .download-buttons {
+    flex-direction: column;
+  }
+
+  .footer-links,
+  .tools,
+  .feature-description,
+  .tools-list {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-monitor,
+  .devices-image {
+    padding: 0 2rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links,
+  .footer-links {
+    margin: 0;
+  }
+}
